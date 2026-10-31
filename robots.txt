@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gmlakd1526-haon.github.io/ashen-crown-site/sitemap.xml

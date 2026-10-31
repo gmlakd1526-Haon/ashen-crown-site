@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashen Crown 에션 크라운 | 수집형 RPG · 외부 시험 참가 모집</title>
+<meta name="description" content="Ashen Crown(에션 크라운)은 날아오는 마법까지 막아 내는 실시간 전투, 급습·정예·네임드 몬스터, 레이드와 유물 던전 파밍, 에픽·신화 장비를 갖춘 PC 수집형 RPG입니다. Steam 출시 준비 중, 외부 시험 참가자를 모집합니다.">
+<meta name="keywords" content="Ashen Crown, 에션 크라운, 애션 크라운, 에센 크라운, 수집형 RPG, 스팀 RPG, 인디 게임, 외부 시험, 베타 테스트">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://gmlakd1526-haon.github.io/ashen-crown-site/">
+<!-- 검색 등록 소유 확인 태그 (구글·네이버에서 받은 코드를 아래 content에 넣기) -->
+<meta name="google-site-verification" content="NPH8s7cqwEvu_d-2dAM3kWugvck92uBr-GnBjFZzkkw">
+<!-- <meta name="naver-site-verification" content=""> -->
+<meta property="og:site_name" content="Ashen Crown">
+<meta property="og:title" content="Ashen Crown 에션 크라운 | 수집형 RPG">
+<meta property="og:description" content="날아오는 마법까지 막아 내는 전투, 매번 다른 몬스터, 레이드와 유물 던전, 에픽·신화 장비. 외부 시험 참가자 모집 중.">
+<meta property="og:image" content="https://gmlakd1526-haon.github.io/ashen-crown-site/img/hero-bg.webp">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:url" content="https://gmlakd1526-haon.github.io/ashen-crown-site/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoGame","name":"Ashen Crown","alternateName":["에션 크라운","애션 크라운","에센 크라운"],"url":"https://gmlakd1526-haon.github.io/ashen-crown-site/","image":"https://gmlakd1526-haon.github.io/ashen-crown-site/img/hero-bg.webp","description":"날아오는 마법까지 막아 내는 실시간 전투, 다양한 몬스터, 레이드·유물 던전 파밍, 에픽·신화 장비를 갖춘 수집형 RPG.","genre":["RPG","Collectible RPG"],"gamePlatform":"PC","operatingSystem":"Windows","inLanguage":["ko","en"],"offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"publisher":{"@type":"Organization","name":"Ashen Crown","email":"ashencrown.support@gmail.com"}}
+</script>
+<meta name="theme-color" content="#14110f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Cinzel:wght@600;700&display=swap">
+<style>
+/* Ashen Crown homepage. Dark ash-and-ember only: the game's own palette, so one theme on purpose. */
+:root{
+  --ash:#14110f;
+  --ash-2:#1d1915;
+  --ash-3:#26201b;
+  --bone:#ece4d6;
+  --dust:#a89c8a;
+  --ember:#e0a24e;
+  --ember-hot:#f0b965;
+  --blood:#c4533a;
+  --rule:#3a322a;
+  --display:"Gowun Batang","Nanum Myeongjo",serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --latin:"Cinzel","Times New Roman",serif;
+  --gutter:max(16px,env(safe-area-inset-left,0px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;word-break:keep-all;overflow-wrap:break-word;background:var(--ash);color:var(--bone);font-family:var(--body);font-size:16px;line-height:1.75;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--ember)}
+h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-left:var(--gutter);padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* language switch: elements carry data-ko / data-en twins */
+[data-lang="ko"] [lang="en"]{display:none!important}
+[data-lang="en"] [lang="ko"]{display:none!important}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(20,17,15,.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:56px}
+.brand{font-family:var(--latin);font-weight:700;letter-spacing:.14em;color:var(--bone);text-decoration:none;font-size:15px;white-space:nowrap}
+.brand span{color:var(--ember)}
+.nav ul{display:flex;gap:18px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{color:var(--dust);text-decoration:none;font-size:14px}
+.nav ul a:hover{color:var(--bone)}
+.lang{display:flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;flex:none}
+.lang a{color:var(--dust);font:600 12px/1 var(--body);padding:7px 10px;text-decoration:none}
+.lang a[aria-current="page"]{background:var(--ember);color:#1a1209}
+@media (max-width:760px){.nav ul{display:none}.lang{margin-left:auto}}
+
+/* hero: clean high-res key art with the official logo laid over the dark wall */
+.hero{position:relative;border-bottom:1px solid var(--rule)}
+.hero-art{position:relative;max-width:1672px;margin:0 auto;aspect-ratio:16/9;max-height:72vh;overflow:hidden}
+.hero-art .bg{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.hero-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,17,15,0) 50%,rgba(20,17,15,.7) 82%,var(--ash) 100%),linear-gradient(90deg,rgba(20,17,15,.55) 0,rgba(20,17,15,0) 45%),linear-gradient(90deg,var(--ash) 0,rgba(20,17,15,0) 4%,rgba(20,17,15,0) 96%,var(--ash) 100%)}
+.hero-logo{position:absolute;z-index:1;left:5%;top:16%;width:min(40%,560px);filter:drop-shadow(0 6px 24px rgba(0,0,0,.7))}
+.hero-logo img{width:100%;height:auto}
+.hero .wrap{position:relative;margin-top:-56px;padding-bottom:48px;display:flex;flex-direction:column;gap:14px}
+.hero h1{font-size:clamp(26px,4.6vw,46px);line-height:1.3;max-width:22ch}
+.hero .lead{color:#d6ccbc;font-size:clamp(16px,2vw,18px);max-width:60ch}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--body)}
+.btn-primary{background:var(--ember);color:#1a1209}
+.btn-primary:hover{background:var(--ember-hot)}
+.btn-ghost{border-color:#5a4c3e;color:var(--bone);background:rgba(20,17,15,.55)}
+.btn-ghost[aria-disabled="true"]{color:var(--dust);cursor:default}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.facts span{border:1px solid var(--rule);background:rgba(29,25,21,.85);border-radius:999px;padding:4px 12px;font-size:13.5px}
+.facts b{color:var(--ember);font-weight:600}
+
+/* sections */
+section{padding-block:72px 0}
+.sec-head{display:grid;gap:10px;margin-bottom:28px;max-width:66ch}
+.sec-head small{font-family:var(--latin);font-size:12px;letter-spacing:.22em;color:var(--ember);font-weight:600}
+.sec-head h2{font-size:clamp(24px,3.6vw,34px);line-height:1.35}
+.sec-head p{color:var(--dust)}
+img.shot{width:100%}
+.split > *,.loot > *,.mgrid > *{min-width:0}
+.shot{border-radius:8px;border:1px solid var(--rule);overflow:hidden;background:var(--ash-2)}
+figure{margin:0;display:grid;gap:8px;min-width:0}
+figcaption{font-size:13.5px;color:var(--dust);line-height:1.55}
+
+/* world */
+.chapters{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 24px;padding:0;list-style:none}
+.chapters li{background:var(--ash-2);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;min-width:0}
+.chapters .act{font-size:12px;color:var(--ember);letter-spacing:.06em}
+.chapters h3{font-size:17px;margin-top:2px}
+.chapters p{font-size:13.5px;color:var(--dust);line-height:1.55;margin-top:4px}
+
+/* pillars */
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:start}
+.split.rev{grid-template-columns:1fr 1.2fr}
+.split.rev > :first-child{order:2}
+.tiles,.modes{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tiles{grid-template-columns:1fr 1fr}
+.tiles li,.modes li{background:var(--ash-2);border:1px solid var(--rule);border-radius:8px;padding:12px 14px;min-width:0}
+.tiles b,.modes b{display:block;color:var(--ember);font-weight:600;font-size:15px}
+.tiles span,.modes span{display:block;color:var(--dust);font-size:14px;line-height:1.55;margin-top:2px}
+.note{margin-top:18px;color:#d6ccbc;border-left:3px solid var(--ember);padding-left:14px;max-width:70ch}
+video.shot{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
+.defense-media{display:grid;gap:8px;min-width:0}
+.pair2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+.pair2 > *{min-width:0}
+.pair2 figcaption{font-size:12.5px}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mgrid figcaption b{display:block;color:var(--bone);font-size:15px;font-weight:600}
+.zoom{all:unset;cursor:zoom-in;display:block;border-radius:8px;min-width:0;width:100%}
+.zoom img{width:100%}
+.zoom:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+.rarity{display:flex;flex-wrap:wrap;gap:6px;font-size:13px;margin-bottom:18px;font-family:var(--latin);letter-spacing:.06em}
+.rarity span{padding:2px 10px;border-radius:4px;border:1px solid currentColor}
+.r1{color:#6fa0e8}.r2{color:#e8d36f}.r3{color:#d9893c}.r4{color:#b47ce6}.r5{color:#ec5f9a}
+.loot{display:grid;grid-template-columns:1fr 1.6fr;gap:14px;margin-bottom:24px}
+.tier{border-radius:10px;padding:20px 22px;border:1px solid;display:grid;gap:8px;align-content:start}
+.tier.epic{border-color:#5d4282;background:linear-gradient(160deg,rgba(180,124,230,.16),var(--ash-2) 60%)}
+.tier.mythic{border-color:#83405e;background:linear-gradient(160deg,rgba(236,95,154,.18),rgba(224,162,78,.08) 45%,var(--ash-2) 75%)}
+.tier-name{font-family:var(--latin);font-weight:700;letter-spacing:.24em;font-size:12px}
+.epic .tier-name{color:#c79bf0}.mythic .tier-name{color:#f28bb6}
+.tier h3{font-size:clamp(19px,2.4vw,23px)}
+.tier p{color:#d6ccbc}
+.tier .sub{color:var(--dust);font-size:14.5px}
+.loot-side{display:grid;gap:14px}
+ul.points{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.points li{padding-left:18px;position:relative;font-size:15px}
+ul.points li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;background:var(--ember);transform:rotate(45deg)}
+ul.points b{color:var(--ember);font-weight:600}
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:min(96vw,1600px);max-height:92vh}
+dialog.lightbox::backdrop{background:rgba(8,6,5,.92)}
+dialog.lightbox img{max-height:86vh;width:auto;margin:0 auto;border-radius:6px}
+dialog.lightbox p{color:var(--dust);text-align:center;font-size:14px;margin-top:8px}
+
+/* playtest */
+.playtest{background:linear-gradient(180deg,var(--ash-2),var(--ash));border:1px solid var(--rule);border-radius:12px;padding:clamp(20px,4vw,40px);display:grid;grid-template-columns:1.1fr 1fr;gap:32px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ember);border:1px solid #5a4630;border-radius:999px;padding:3px 12px;width:max-content}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ember);box-shadow:0 0 0 4px rgba(224,162,78,.18)}
+.playtest h2{font-size:clamp(24px,3.6vw,32px);margin:12px 0 10px}
+.playtest .intro p{color:#d6ccbc}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;border:1px solid var(--ember);color:var(--ember);display:grid;place-items:center;font-family:var(--latin);font-weight:700}
+.steps b{display:block;font-weight:600}
+.steps span{color:var(--dust);font-size:14.5px}
+.apply{margin-top:22px;display:grid;gap:10px}
+.apply .mail{font-size:14px;color:var(--dust);overflow-wrap:anywhere}
+.apply .mail code{color:var(--bone);font-family:inherit}
+.copy{background:none;border:1px solid var(--rule);color:var(--dust);border-radius:4px;font:12px var(--body);padding:3px 8px;cursor:pointer;margin-left:6px}
+.template{background:var(--ash);border:1px dashed #4a3f33;border-radius:8px;padding:14px 16px;font-size:14px;color:var(--dust);white-space:pre-line}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:780px}
+.faq details{background:var(--ash-2);border:1px solid var(--rule);border-radius:8px;padding:14px 18px}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--ember);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--dust);margin-top:8px;font-size:15px}
+
+footer{margin-top:88px;border-top:1px solid var(--rule);padding-block:28px 40px;color:var(--dust);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (max-width:860px){
+  .split,.split.rev,.loot{grid-template-columns:minmax(0,1fr);gap:16px}
+  .split.rev > :first-child{order:0}
+  .playtest{grid-template-columns:1fr}
+  .chapters{grid-template-columns:1fr 1fr}
+}
+@media (max-width:460px){
+  .chapters{grid-template-columns:1fr}
+  .tiles,.mgrid{grid-template-columns:minmax(0,1fr)}
+  .hero .wrap{margin-top:-20px}
+  .hero-art{aspect-ratio:4/3}
+  .hero-logo{width:80%;left:50%;top:8%;transform:translateX(-50%)}
+  .btn{flex:1 1 100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="메뉴">
+  <div class="wrap">
+    <a class="brand" href="#top">ASHEN <span>CROWN</span></a>
+    <ul>
+      <li><a href="#defense"><span lang="ko">전투</span><span lang="en">Combat</span></a></li>
+      <li><a href="#monsters"><span lang="ko">몬스터</span><span lang="en">Monsters</span></a></li>
+      <li><a href="#farming"><span lang="ko">파밍</span><span lang="en">Farming</span></a></li>
+      <li><a href="#loot"><span lang="ko">장비</span><span lang="en">Loot</span></a></li>
+      <li><a href="#playtest"><span lang="ko">시험 참가</span><span lang="en">Playtest</span></a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-art">
+    <img class="bg" src="img/hero-bg.webp" alt="" width="1672" height="941" fetchpriority="high">
+    <div class="hero-logo">
+      <img lang="ko" src="img/logo-ko.webp" alt="에션 크라운 Ashen Crown" width="1200" height="421">
+      <img lang="en" src="img/logo-en.webp" alt="Ashen Crown" width="1200" height="192">
+    </div>
+  </div>
+  <div class="wrap">
+    <h1>
+      <span lang="ko">신이 침묵한 잿빛 세계에서, 마지막 왕관을 좇다</span>
+      <span lang="en">In an ashen world the gods abandoned, chase the last crown</span>
+    </h1>
+    <p class="lead">
+      <span lang="ko">동료를 모아 파티를 짜고, 전열에서 실시간으로 부딪치는 전투를 지휘하는 수집형 RPG입니다. 날아오는 마법까지 막아 내는 전투, 매번 다른 몬스터, 레이드와 유물 던전을 오가는 파밍, 그리고 그 끝에서 만나는 에픽·신화 장비가 기다립니다.</span>
+      <span lang="en">A collectible RPG where you gather companions, build your party, and command real-time front-line battles. Block spells mid-air, face ever-changing monsters, farm raids and relic dungeons, and chase Epic and Mythic gear.</span>
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#playtest"><span lang="ko">외부 시험 참가하기</span><span lang="en">Join the playtest</span></a>
+      <span class="btn btn-ghost" aria-disabled="true"><span lang="ko">Steam 페이지 준비 중</span><span lang="en">Steam page coming soon</span></span>
+    </div>
+    <div class="facts">
+      <span lang="ko">장르 <b>수집형 RPG</b></span><span lang="en">Genre <b>Collectible RPG</b></span>
+      <span lang="ko">플랫폼 <b>PC (Steam)</b></span><span lang="en">Platform <b>PC (Steam)</b></span>
+      <span lang="ko">가격 <b>무료</b></span><span lang="en">Price <b>Free to play</b></span>
+      <span lang="ko">동료 <b>94명</b></span><span lang="en">Companions <b>94</b></span>
+      <span lang="ko">스토리 <b>8장</b></span><span lang="en">Story <b>8 chapters</b></span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="world">
+  <div class="wrap">
+    <div class="sec-head">
+      <small>WORLD</small>
+      <h2><span lang="ko">재가 내리는 세계, 왕관의 진실</span><span lang="en">A world of falling ash, and the truth of the crown</span></h2>
+      <p lang="ko">신들이 사라진 뒤 재가 내리는 세계. 변경의 무너진 성채에서 왕관 파편의 흔적을 발견한 주인공과 동료들은, 그것이 권력의 상징이 아니라 신과 종족이 맺은 오래된 맹약의 장치였다는 사실에 다가갑니다. 마지막에는 세계가 어떤 모습으로 이어질지 직접 선택하게 됩니다.</p>
+      <p lang="en">The gods are gone, and ash falls from the sky. In a ruined frontier fortress, you and your companions find a shard of the crown, and slowly learn it was never a symbol of power but the seal of an ancient pact between gods and mortals. In the end, you decide what the world becomes.</p>
+    </div>
+    <ol class="chapters">
+      <li><div class="act"><span lang="ko">1부 · 1~2장</span><span lang="en">Act I · Ch. 1–2</span></div><h3><span lang="ko">재와 균열</span><span lang="en">Ash and Rift</span></h3><p><span lang="ko">잿빛 성채와 그 아래 균열의 심연</span><span lang="en">The ashen citadel and the abyss beneath</span></p></li>
+      <li><div class="act"><span lang="ko">2부 · 3~4장</span><span lang="en">Act II · Ch. 3–4</span></div><h3><span lang="ko">왕관의 기억</span><span lang="en">Memory of the Crown</span></h3><p><span lang="ko">잊힌 숲의 노래, 모래에 묻힌 사막 왕국</span><span lang="en">A forgotten forest's song, a kingdom buried in sand</span></p></li>
+      <li><div class="act"><span lang="ko">3부 · 5~6장</span><span lang="en">Act III · Ch. 5–6</span></div><h3><span lang="ko">깨진 맹약</span><span lang="en">The Broken Pact</span></h3><p><span lang="ko">검은 바다, 그리고 신을 삼킨 바다</span><span lang="en">The black sea, and the sea that swallowed a god</span></p></li>
+      <li><div class="act"><span lang="ko">4부 · 7~8장</span><span lang="en">Act IV · Ch. 7–8</span></div><h3><span lang="ko">신 없는 새벽</span><span lang="en">Godless Dawn</span></h3><p><span lang="ko">불타는 대지와 왕관 너머의 마지막 경계</span><span lang="en">Burning lands and the last border beyond the crown</span></p></li>
+    </ol>
+    <figure>
+      <img class="shot" src="img/chapter.webp" alt="3장 전투 시작 화면" loading="lazy" width="1130" height="700">
+      <figcaption><span lang="ko">각 전투는 장 제목과 함께 시작하고, 어떤 적이 몇 번 몰려오는지 미리 알려 줍니다.</span><span lang="en">Every battle opens with its chapter title and tells you which enemies, and how many waves, are coming.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="defense">
+  <div class="wrap">
+    <div class="sec-head">
+      <small>01 · DEFENSE</small>
+      <h2><span lang="ko">날아오는 마법까지 막아 내는 전투</span><span lang="en">Battles where you can stop spells mid-air</span></h2>
+      <p lang="ko">적의 화염탄과 마법은 천천히 날아와 닿는 순간 터집니다. 그사이에 막을지, 쏘아 떨어뜨릴지, 피할지는 동료의 직업과 성격에 따라 다릅니다. 다섯 동료가 전열에서 실시간으로 싸우고, 기술은 자동으로 두거나 직접 눌러 쓸 수 있습니다.</p>
+      <p lang="en">Enemy fireballs and curses travel slowly and burst on impact. Whether your party blocks, shoots them down or dodges depends on each companion's class and personality. Five companions fight in real time; skills can run on auto or fire at your command.</p>
+    </div>
+    <div class="split">
+      <div class="defense-media">
+        <video class="shot clip" autoplay muted loop playsinline preload="metadata" poster="img/defense-perfect.webp" width="1280" height="720" aria-label="4-1 실제 전투: 방벽이 파티를 지키고, 날아오는 기술을 격추하고, 완벽 방어로 막아 내는 장면">
+          <source src="video/defense.webm" type="video/webm">
+          <source src="video/defense.mp4" type="video/mp4">
+        </video>
+        <figcaption><span lang="ko">실제 전투. 방벽이 파티를 지키는 동안 날아오는 기술을 격추하고, 마지막 한 발은 완벽 방어로 받아 냅니다.</span><span lang="en">Live gameplay: a barrier holds while incoming attacks are shot down, and the last one meets a Perfect Guard.</span></figcaption>
+        <div class="pair2">
+          <figure>
+            <button type="button" class="zoom" data-ko="방벽이 날아온 공격을 받아 내는 순간. 오른쪽 위에 날아오는 기술과 요격·방벽 버튼이 뜹니다" data-en="The barrier takes a hit. Incoming attacks and the intercept and barrier buttons are listed top right"><img class="shot" src="img/defense-shootdown.webp" alt="보른 앞에 세운 방벽이 날아온 공격을 받아 내고, 오른쪽 위에 날아오는 기술 목록과 요격·방벽 버튼이 뜬 장면" loading="lazy" width="1280" height="720"></button>
+            <figcaption><span lang="ko">방벽이 공격을 받아 냅니다. 오른쪽 위에 무엇이 누구에게 날아오는지 뜹니다.</span><span lang="en">The barrier takes the hit; the top-right panel lists what's incoming and at whom.</span></figcaption>
+          </figure>
+          <figure>
+            <button type="button" class="zoom" data-ko="수호자 보른의 완벽 방어" data-en="Born's Perfect Guard"><img class="shot" src="img/defense-perfect.webp" alt="수호자 보른이 방패로 공격을 받아 내며 「완벽 방어!」 문구가 뜬 장면" loading="lazy" width="1280" height="720"></button>
+            <figcaption><span lang="ko">테두리가 금색일 때 맞춰 막으면 「완벽 방어」가 터집니다.</span><span lang="en">Time it while the ring glows gold for a Perfect Guard.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <ul class="tiles">
+        <li><b lang="ko">요격 사격</b><b lang="en">Intercept</b><span lang="ko">궁수가 날아오는 마법을 쏘아 떨어뜨립니다.</span><span lang="en">Archers shoot projectiles out of the air.</span></li>
+        <li><b lang="ko">마탄 상쇄</b><b lang="en">Counterspell</b><span lang="ko">마법사가 마력탄으로 맞받아 지웁니다.</span><span lang="en">Mages cancel magic with magic.</span></li>
+        <li><b lang="ko">방벽</b><b lang="en">Barrier</b><span lang="ko">지원가가 방벽을 세워 피해를 크게 줄입니다.</span><span lang="en">Supports raise a ward that soaks most of the damage.</span></li>
+        <li><b lang="ko">방패 막기</b><b lang="en">Shield block</b><span lang="ko">수호자가 방패로 정면에서 받아 냅니다.</span><span lang="en">Guardians take it head-on with a shield.</span></li>
+        <li><b lang="ko">베어내기</b><b lang="en">Cleave</b><span lang="ko">전사가 날아오는 마법을 칼로 갈라 버립니다.</span><span lang="en">Warriors cut the spell in two.</span></li>
+        <li><b lang="ko">회피</b><b lang="en">Evade</b><span lang="ko">척후가 몸을 날려 피합니다.</span><span lang="en">Scouts simply aren't there when it lands.</span></li>
+      </ul>
+    </div>
+    <p class="note"><span lang="ko">동료 94명 중 88명이 저마다 다른 대응 방식을 가지고 있고, 막는 확률은 능력치·기술·장비로 키울 수 있습니다.</span><span lang="en">88 of the 94 companions react in their own way, and the odds of success can be raised with stats, skills and gear.</span></p>
+  </div>
+</section>
+
+<section id="monsters">
+  <div class="wrap">
+    <div class="sec-head">
+      <small>02 · MONSTERS</small>
+      <h2><span lang="ko">같은 스테이지도 매번 다른 적</span><span lang="en">The same stage, never the same fight</span></h2>
+      <p lang="ko">증원이 올 때마다 무엇이 나올지 모릅니다. 뒤에서 들이닥치는 급습, 특수 능력이 붙은 정예, 이름과 고유 필살기를 가진 네임드까지. 지역이 바뀌면 적의 모습과 특성도 바뀝니다.</p>
+      <p lang="en">Every reinforcement wave is a surprise: an ambush from behind, elites with special traits, or a named monster with its own title and signature move. New regions bring new enemies and new traits.</p>
+    </div>
+    <div class="mgrid">
+      <figure>
+        <button type="button" class="zoom" data-ko="급습! 전투 중 적 부대가 들이닥치는 장면" data-en="Ambush! An enemy squad storms in mid-battle"><img class="shot" src="img/ambush.webp" alt="급습 경고가 뜬 전투" loading="lazy" width="1600" height="900"></button>
+        <figcaption><b lang="ko">급습</b><b lang="en">Ambush</b><span lang="ko">경고와 함께 적이 곧바로 덮칩니다.</span><span lang="en">A warning, then they're already on you.</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="zoom" data-ko="붉은 문장의 정예 부대" data-en="An elite squad with red crests"><img class="shot" src="img/elite.webp" alt="정예 몬스터가 섞인 전투" loading="lazy" width="1600" height="900"></button>
+        <figcaption><b lang="ko">정예</b><b lang="en">Elite</b><span lang="ko">붉은 문장. 철갑·폭주·질주·수호 중 하나의 특성을 가집니다.</span><span lang="en">Red crest, plus one trait: ironclad, frenzy, haste or warden.</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="zoom" data-ko="금빛 문장의 네임드 몬스터" data-en="A named monster with a golden crest"><img class="shot" src="img/named.webp" alt="네임드 몬스터 전투" loading="lazy" width="1600" height="900"></button>
+        <figcaption><b lang="ko">네임드</b><b lang="en">Named</b><span lang="ko">칭호 24종, 고유 필살기, 특성 12종. 놓치면 달아났다가 더 강해져 돌아옵니다.</span><span lang="en">24 titles, signature moves, 12 traits. Let one escape and it comes back stronger, out for revenge.</span></figcaption>
+      </figure>
+      <figure>
+        <button type="button" class="zoom" data-ko="사막 지역의 모래 벌레" data-en="A sandworm in the desert region"><img class="shot" src="img/regional.webp" alt="사막 모래 벌레 전투" loading="lazy" width="1600" height="900"></button>
+        <figcaption><b lang="ko">지역별 적과 날씨</b><b lang="en">Regions and weather</b><span lang="ko">숲·사막·바다마다 다른 적, 그리고 붉은 달·재폭풍 같은 날씨.</span><span lang="en">Different foes in forest, desert and sea, plus weather like the Red Moon and ash storms.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="farming">
+  <div class="wrap">
+    <div class="sec-head">
+      <small>03 · FARMING</small>
+      <h2><span lang="ko">스토리를 끝낸 뒤에도, 파밍은 계속된다</span><span lang="en">The story ends. The hunt doesn't.</span></h2>
+      <p lang="ko">콘텐츠마다 보스의 성격과 얻는 재료가 다릅니다. 요일과 주마다 바뀌는 조건에 맞춰 파티를 다시 짜는 것이 공략의 핵심입니다.</p>
+      <p lang="en">Each mode has its own bosses and its own loot. Rebuilding your party for the conditions of each day and week is the heart of the game.</p>
+    </div>
+    <div class="split rev">
+      <figure>
+        <img class="shot" src="img/lobby.webp" alt="로비 화면: 안내인 미라와 다음 여정, 요일 던전, 주간 보스, 결전 레이드, 유물 던전, 투기장 메뉴" loading="lazy" width="1600" height="900">
+        <figcaption><span lang="ko">로비에서 오늘 갈 곳을 고릅니다.</span><span lang="en">Pick today's hunt from the lobby.</span></figcaption>
+      </figure>
+      <ul class="modes">
+        <li><b lang="ko">결전 레이드</b><b lang="en">Raids</b><span lang="ko">10인 결전. 시간이 지나면 보스가 폭주하고, 체력이 바닥나면 최후의 발악을 합니다.</span><span lang="en">Ten-hero showdowns. Bosses enrage over time and make a desperate last stand near death.</span></li>
+        <li><b lang="ko">유물 던전</b><b lang="en">Relic dungeons</b><span lang="ko">함정과 급습을 뚫고 유물 수호자를 쓰러뜨려 신화 재료를 얻습니다.</span><span lang="en">Fight through traps and ambushes to the Relic Guardian for mythic materials.</span></li>
+        <li><b lang="ko">주간 보스</b><b lang="en">Weekly bosses</b><span lang="ko">매주 바뀌는 변조 6종, 토벌 등급은 C부터 SSS까지.</span><span lang="en">Six rotating weekly modifiers, clear ranks from C to SSS.</span></li>
+        <li><b lang="ko">요일 던전</b><b lang="en">Weekday dungeons</b><span lang="ko">요일마다 다른 속성의 정령왕. 약점을 찌르는 편성이 필요합니다.</span><span lang="en">A different elemental king each day. Bring the right counters.</span></li>
+        <li><b lang="ko">현상수배</b><b lang="en">Bounties</b><span lang="ko">네임드를 잡고 받은 증표를 그 장 전용 장비로 교환합니다.</span><span lang="en">Trade named-hunt tokens for chapter-exclusive gear.</span></li>
+        <li><b lang="ko">투기장</b><b lang="en">Arena</b><span lang="ko">키운 파티로 다른 편성과 실력을 겨룹니다.</span><span lang="en">Test your party against other line-ups.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="loot">
+  <div class="wrap">
+    <div class="sec-head">
+      <small>04 · LOOT</small>
+      <h2><span lang="ko">파밍의 끝에서 만나는 에픽과 신화</span><span lang="en">At the end of the hunt: Epic and Mythic</span></h2>
+      <p lang="ko">장비는 등급과 무작위 옵션이 붙은 채로 떨어집니다. 같은 이름의 검도 옵션이 매번 다르고, 최대치로 붙은 줄은 빛으로 알려 줍니다. 그리고 그 끝에는 이야기를 품은 특별한 장비가 기다립니다.</p>
+      <p lang="en">Gear drops with a rarity and randomized affixes; no two swords roll the same, and max rolls glow. At the very end waits gear with a story of its own.</p>
+    </div>
+    <div class="rarity" aria-label="장비 등급">
+      <span class="r1">Magic</span><span class="r2">Rare</span><span class="r3">Unique</span><span class="r4">Epic</span><span class="r5">Mythic</span>
+    </div>
+    <div class="loot">
+      <article class="tier epic">
+        <div class="tier-name">EPIC</div>
+        <h3><span lang="ko">에픽 세트</span><span lang="en">Epic sets</span></h3>
+        <p lang="ko">물리·마법·수호 세 갈래의 세트 장비. 모아 입으면 파티의 역할이 또렷해집니다.</p>
+        <p lang="en">Set gear in three lines: physical, arcane and warden. Complete a set and the role sharpens.</p>
+      </article>
+      <article class="tier mythic">
+        <div class="tier-name">MYTHIC</div>
+        <h3><span lang="ko">신화 20종과 「현현」</span><span lang="en">20 Mythics and Manifestation</span></h3>
+        <p lang="ko">신화 장비마다 고유한 색과 이야기가 있습니다. 능력이 발동하면 장비에 깃든 전설 속 인물이 착용자 곁에 나타나 함께 공격하고, 지키고, 치유합니다.</p>
+        <p lang="en">Every Mythic has its own color and legend. When its power triggers, the figure bound to it appears beside the wearer to strike, shield or heal.</p>
+        <p class="sub" lang="ko">레이드와 유물 던전에서 원초의 불씨와 신화 조각을 모아 대장간에서 조합합니다. 실패할 때마다 다음 성공 확률이 오릅니다.</p>
+        <p class="sub" lang="en">Gather Primal Embers and Mythic Shards from raids and relic dungeons, then craft your Mythic at the forge. Each failure raises your odds on the next attempt.</p>
+      </article>
+    </div>
+    <div class="split">
+      <figure>
+        <img class="shot" src="img/forge.webp" alt="대장간 화면: 대장장이 볼드린, 강화할 동료, 에픽 무기가 끼워진 장비 칸" loading="lazy" width="1600" height="900">
+        <figcaption><span lang="ko">대장간. 대장장이 볼드린이 강화와 신화 조합을 맡아 줍니다.</span><span lang="en">The forge, where Boldrin enhances gear and crafts Mythics.</span></figcaption>
+      </figure>
+      <div class="loot-side">
+        <img class="shot" src="img/affix.webp" alt="장비 옵션 예시: 화염 피해 +30% 최대치, 공격력 +10%, 흡혈 +4%p 최대치" loading="lazy" width="560" height="260">
+        <ul class="points">
+          <li lang="ko"><b>무기 14종</b> 무기마다 피해 범위, 공격 속도, 고유 특성이 다릅니다.</li>
+          <li lang="en"><b>14 weapon types</b> Each with its own damage range, speed and trait.</li>
+          <li lang="ko"><b>무작위 옵션 52종</b> 출혈·중독·감전·빙결을 노리는 빌드도 짤 수 있습니다.</li>
+          <li lang="en"><b>52 random affixes</b> Build around bleed, poison, shock or freeze.</li>
+          <li lang="ko"><b>강화 +15까지</b> 등급이 높을수록 더 높이 키울 수 있습니다.</li>
+          <li lang="en"><b>Enhance up to +15</b> Higher rarities climb higher.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="companions">
+  <div class="wrap">
+    <div class="split rev">
+      <img class="shot" src="img/summon.webp" alt="소환 화면: 왼쪽에 큰 동료 원화, 오른쪽에 이번 픽업 목록" loading="lazy" width="1600" height="900">
+      <div class="sec-head" style="margin:0">
+        <small>05 · COMPANIONS</small>
+        <h2><span lang="ko">94명의 동료</span><span lang="en">94 companions</span></h2>
+        <p lang="ko">동료마다 세력과 이야기가 있고, 함께 지내며 쌓는 유대가 능력치를 올려 줍니다. 소환 확률과 천장은 게임 안에 모두 공개하고, 유료 재화 「왕관석」은 임무·출석·업적으로도 꾸준히 모을 수 있습니다.</p>
+        <p lang="en">Every companion has a faction and a story, and bonds raise their stats. All summon rates and pity thresholds are published in-game, and Crown Gems can be earned steadily through missions, log-ins and achievements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="playtest">
+  <div class="wrap">
+    <div class="playtest">
+      <div class="intro">
+        <div class="status"><span lang="ko">참가자 모집 중</span><span lang="en">Sign-ups open</span></div>
+        <h2><span lang="ko">외부 시험에 함께해 주세요</span><span lang="en">Help us test Ashen Crown</span></h2>
+        <p lang="ko">출시 전에 실제 플레이어의 눈으로 게임을 다듬으려고 합니다. 난이도, 재미, 불편한 점을 솔직하게 알려 주실 분을 찾습니다. 시험은 무료이고, 일정과 게임을 받는 방법은 신청하신 메일로 따로 안내드립니다.</p>
+        <p lang="en">Before launch we want real players to tell us what works and what doesn't: difficulty, fun, and anything that gets in the way. Testing is free, and we'll email you the schedule and how to get the build.</p>
+        <div class="apply">
+          <a class="btn btn-primary" id="applyMail" href="mailto:ashencrown.support@gmail.com"><span lang="ko">메일로 신청하기</span><span lang="en">Apply by email</span></a>
+          <p class="mail"><span lang="ko">메일 앱이 열리지 않으면 아래 주소로 보내 주세요.</span><span lang="en">If no mail app opens, write to:</span><br><code>ashencrown.support@gmail.com</code><button type="button" class="copy" data-copy="ashencrown.support@gmail.com"><span lang="ko">복사</span><span lang="en">Copy</span></button></p>
+        </div>
+      </div>
+      <div>
+        <ol class="steps">
+          <li><div><b lang="ko">메일 보내기</b><b lang="en">Send an email</b><span lang="ko">제목을 「외부 시험 신청」으로 하고 아래 내용을 적어 주세요.</span><span lang="en">Use the subject "Playtest application" and include the details below.</span></div></li>
+          <li><div><b lang="ko">안내받기</b><b lang="en">Get the details</b><span lang="ko">시험 일정이 정해지면 신청 순서대로 메일로 알려 드립니다.</span><span lang="en">Once a test date is set, we'll email you in order of sign-up.</span></div></li>
+          <li><div><b lang="ko">플레이하고 의견 남기기</b><b lang="en">Play and tell us</b><span lang="ko">짧은 설문이나 메일로 느낀 점을 들려주세요.</span><span lang="en">Share what you thought in a short survey or email.</span></div></li>
+        </ol>
+        <div class="template" style="margin-top:20px" lang="ko">메일에 적어 주실 내용
+· 닉네임
+· 사용하는 PC (Windows 버전, 그래픽카드 정도면 충분해요)
+· 즐겨 하는 게임 장르
+· 연락받을 곳 (메일, 디스코드 등)</div>
+        <div class="template" style="margin-top:20px" lang="en">Please include
+· Nickname
+· Your PC (Windows version and graphics card are enough)
+· Genres you usually play
+· How to reach you (email, Discord, etc.)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head"><small>FAQ</small><h2><span lang="ko">자주 묻는 질문</span><span lang="en">Questions</span></h2></div>
+    <div class="faq">
+      <details><summary><span lang="ko">무료인가요?</span><span lang="en">Is it free?</span></summary>
+        <p lang="ko">네. 무료로 플레이하고, 게임 안에서 유료 재화 「왕관석」을 살 수 있습니다. 왕관석은 임무·출석·업적으로도 꾸준히 모을 수 있게 만들고 있습니다.</p>
+        <p lang="en">Yes. The game is free to play, with an optional premium currency, Crown Gems, that you can also earn steadily through missions, log-ins and achievements.</p></details>
+      <details><summary><span lang="ko">언제 출시하나요?</span><span lang="en">When does it launch?</span></summary>
+        <p lang="ko">출시일은 아직 정하지 않았습니다. Steam(PC)에 앞서 해보기로 먼저 나오고, 이후 모바일도 준비할 예정입니다.</p>
+        <p lang="en">No date yet. It will come to Steam (PC) first as Early Access, with mobile planned later.</p></details>
+      <details><summary><span lang="ko">어떤 언어를 지원하나요?</span><span lang="en">Which languages?</span></summary>
+        <p lang="ko">한국어와 영어를 지원할 예정입니다.</p>
+        <p lang="en">Korean and English are planned.</p></details>
+      <details><summary><span lang="ko">시험 버전 화면을 공유해도 되나요?</span><span lang="en">Can I share playtest footage?</span></summary>
+        <p lang="ko">시험마다 안내 메일에 따로 적어 드립니다. 안내가 없을 때는 먼저 문의해 주세요.</p>
+        <p lang="en">Each test's invitation email will tell you. If it doesn't, please ask us first.</p></details>
+      <details><summary><span lang="ko">문의는 어디로 하나요?</span><span lang="en">How do I contact you?</span></summary>
+        <p><a href="mailto:ashencrown.support@gmail.com">ashencrown.support@gmail.com</a></p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ashen Crown</span>
+    <span><span lang="ko">문의</span><span lang="en">Contact</span> · <a href="mailto:ashencrown.support@gmail.com">ashencrown.support@gmail.com</a></span>
+    <span lang="ko">모든 사진은 개발 중인 실제 게임 화면입니다.</span><span lang="en">All images are in-development game footage.</span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="스크린샷">
+  <form method="dialog"><button type="submit" style="all:unset;display:block;cursor:zoom-out"><img alt=""><p></p></button></form>
+</dialog>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var mail="ashencrown.support@gmail.com";
+  var body={
+    ko:"닉네임:\n사용하는 PC (Windows 버전, 그래픽카드):\n즐겨 하는 게임 장르:\n연락받을 곳 (메일, 디스코드 등):\n",
+    en:"Nickname:\nPC (Windows version, graphics card):\nGenres I usually play:\nHow to reach me (email, Discord, etc.):\n"
+  };
+  var subject={ko:"[Ashen Crown] 외부 시험 신청",en:"[Ashen Crown] Playtest application"};
+  var l=root.getAttribute("data-lang")==="en"?"en":"ko";
+  document.getElementById("applyMail").href="mailto:"+mail+"?subject="+encodeURIComponent(subject[l])+"&body="+encodeURIComponent(body[l]);
+
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var done=function(){var s=b.innerHTML;b.textContent="✓";setTimeout(function(){b.innerHTML=s},1200)};
+      if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copy).then(done,function(){})}
+    });
+  });
+
+  var lb=document.getElementById("lightbox");
+  document.querySelectorAll(".zoom").forEach(function(b){
+    b.addEventListener("click",function(){
+      var img=b.querySelector("img");
+      lb.querySelector("img").src=img.src;
+      lb.querySelector("img").alt=img.alt;
+      lb.querySelector("p").textContent=b.dataset[root.getAttribute("data-lang")];
+      if(lb.showModal)lb.showModal();
+    });
+  });
+  lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});
+})();
+</script>
+</body>
+</html>
